@@ -1,0 +1,747 @@
+{
+  "locais": [
+    {
+      "id": 1,
+      "nome": "LOCAL TESTE 1",
+      "endereco": "RUA TESTE 1, CENTRO 1, SAO PAULO, SP",
+      "telefone": "(11) 99001-1037",
+      "site_url": "https://example.com/mobisi/local-1",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-1/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "RESTAURANTE",
+      "notas_historicas": [
+        2
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 2,
+      "nome": "LOCAL TESTE 2",
+      "endereco": "RUA TESTE 2, CENTRO 2, SAO PAULO, SP",
+      "telefone": "(21) 99002-1074",
+      "site_url": "https://example.com/mobisi/local-2",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-2/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "RESTAURANTE",
+      "notas_historicas": [
+        3
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 0,
+          "Nao": 1
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 3,
+      "nome": "LOCAL TESTE 3",
+      "endereco": "RUA TESTE 3, CENTRO 3, SAO PAULO, SP",
+      "telefone": "(31) 99003-1111",
+      "site_url": "https://example.com/mobisi/local-3",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-3/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "RESTAURANTE",
+      "notas_historicas": [
+        4
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 0,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 4,
+      "nome": "LOCAL TESTE 4",
+      "endereco": "RUA TESTE 4, CENTRO 4, SAO PAULO, SP",
+      "telefone": "(41) 99004-1148",
+      "site_url": "https://example.com/mobisi/local-4",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-4/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "RESTAURANTE",
+      "notas_historicas": [
+        5
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 0,
+          "Nao": 1
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 5,
+      "nome": "LOCAL TESTE 5",
+      "endereco": "RUA TESTE 5, CENTRO 5, SAO PAULO, SP",
+      "telefone": "(51) 99005-1185",
+      "site_url": "https://example.com/mobisi/local-5",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-5/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "RESTAURANTE",
+      "notas_historicas": [
+        1
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 6,
+      "nome": "LOCAL TESTE 6",
+      "endereco": "RUA TESTE 6, CENTRO 6, SAO PAULO, SP",
+      "telefone": "(61) 99006-1222",
+      "site_url": "https://example.com/mobisi/local-6",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-6/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "RESTAURANTE",
+      "notas_historicas": [
+        2
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 0,
+          "Nao": 1
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 0,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 7,
+      "nome": "LOCAL TESTE 7",
+      "endereco": "RUA TESTE 7, CENTRO 7, SAO PAULO, SP",
+      "telefone": "(71) 99007-1259",
+      "site_url": "https://example.com/mobisi/local-7",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-7/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "RESTAURANTE",
+      "notas_historicas": [
+        3
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 8,
+      "nome": "LOCAL TESTE 8",
+      "endereco": "RUA TESTE 8, CENTRO 8, SAO PAULO, SP",
+      "telefone": "(81) 99008-1296",
+      "site_url": "https://example.com/mobisi/local-8",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-8/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "RESTAURANTE",
+      "notas_historicas": [
+        4
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 0,
+          "Nao": 1
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 9,
+      "nome": "LOCAL TESTE 9",
+      "endereco": "RUA TESTE 9, CENTRO 9, SAO PAULO, SP",
+      "telefone": "(85) 99009-1333",
+      "site_url": "https://example.com/mobisi/local-9",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-9/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "RESTAURANTE",
+      "notas_historicas": [
+        5
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 0,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 10,
+      "nome": "LOCAL TESTE 10",
+      "endereco": "RUA TESTE 10, CENTRO 10, SAO PAULO, SP",
+      "telefone": "(91) 99010-1370",
+      "site_url": "https://example.com/mobisi/local-10",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-10/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "RESTAURANTE",
+      "notas_historicas": [
+        1
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 0,
+          "Nao": 1
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 11,
+      "nome": "LOCAL TESTE 11",
+      "endereco": "AVENIDA TESTE 11, CENTRO 11, RIO DE JANEIRO, SP",
+      "telefone": "(11) 99011-1407",
+      "site_url": "https://example.com/mobisi/local-11",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-11/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "MUSEU",
+      "notas_historicas": [
+        2
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 12,
+      "nome": "LOCAL TESTE 12",
+      "endereco": "AVENIDA TESTE 12, CENTRO 12, RIO DE JANEIRO, SP",
+      "telefone": "(21) 99012-1444",
+      "site_url": "https://example.com/mobisi/local-12",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-12/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "MUSEU",
+      "notas_historicas": [
+        3
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 0,
+          "Nao": 1
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 0,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 13,
+      "nome": "LOCAL TESTE 13",
+      "endereco": "AVENIDA TESTE 13, CENTRO 13, RIO DE JANEIRO, SP",
+      "telefone": "(31) 99013-1481",
+      "site_url": "https://example.com/mobisi/local-13",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-13/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "MUSEU",
+      "notas_historicas": [
+        4
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 14,
+      "nome": "LOCAL TESTE 14",
+      "endereco": "AVENIDA TESTE 14, CENTRO 14, RIO DE JANEIRO, SP",
+      "telefone": "(41) 99014-1518",
+      "site_url": "https://example.com/mobisi/local-14",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-14/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "MUSEU",
+      "notas_historicas": [
+        5
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 0,
+          "Nao": 1
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 15,
+      "nome": "LOCAL TESTE 15",
+      "endereco": "AVENIDA TESTE 15, CENTRO 15, RIO DE JANEIRO, SP",
+      "telefone": "(51) 99015-1555",
+      "site_url": "https://example.com/mobisi/local-15",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-15/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "MUSEU",
+      "notas_historicas": [
+        1
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 0,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 16,
+      "nome": "LOCAL TESTE 16",
+      "endereco": "AVENIDA TESTE 16, CENTRO 16, RIO DE JANEIRO, SP",
+      "telefone": "(61) 99016-1592",
+      "site_url": "https://example.com/mobisi/local-16",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-16/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "MUSEU",
+      "notas_historicas": [
+        2
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 0,
+          "Nao": 1
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 17,
+      "nome": "LOCAL TESTE 17",
+      "endereco": "AVENIDA TESTE 17, CENTRO 17, RIO DE JANEIRO, SP",
+      "telefone": "(71) 99017-1629",
+      "site_url": "https://example.com/mobisi/local-17",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-17/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "MUSEU",
+      "notas_historicas": [
+        3
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 18,
+      "nome": "LOCAL TESTE 18",
+      "endereco": "AVENIDA TESTE 18, CENTRO 18, RIO DE JANEIRO, SP",
+      "telefone": "(81) 99018-1666",
+      "site_url": "https://example.com/mobisi/local-18",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-18/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "MUSEU",
+      "notas_historicas": [
+        4
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 0,
+          "Nao": 1
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 0,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 19,
+      "nome": "LOCAL TESTE 19",
+      "endereco": "AVENIDA TESTE 19, CENTRO 19, RIO DE JANEIRO, SP",
+      "telefone": "(85) 99019-1703",
+      "site_url": "https://example.com/mobisi/local-19",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-19/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "MUSEU",
+      "notas_historicas": [
+        5
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    },
+    {
+      "id": 20,
+      "nome": "LOCAL TESTE 20",
+      "endereco": "AVENIDA TESTE 20, CENTRO 20, RIO DE JANEIRO, SP",
+      "telefone": "(91) 99020-1740",
+      "site_url": "https://example.com/mobisi/local-20",
+      "imagem_url": "https://picsum.photos/seed/mobisi-local-20/800/600",
+      "is_active": true,
+      "criado_em": "2026-11-12T12:18:52.9465159Z",
+      "atualizado_em": "2026-11-12T12:18:52.9465159Z",
+      "categoria": "MUSEU",
+      "notas_historicas": [
+        1
+      ],
+      "acessibilidade_historica": {
+        "Rampa": {
+          "Sim": 0,
+          "Nao": 1
+        },
+        "Banheiro_acessivel": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Piso_tatil": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Elevador": {
+          "Sim": 1,
+          "Nao": 0
+        },
+        "Libras": {
+          "Sim": 0,
+          "Nao": 1
+        }
+      }
+    }
+  ],
+  "avaliacoes": [],
+  "next_local_id": 21,
+  "next_avaliacao_id": 1
+}

@@ -138,6 +138,7 @@ def blob_session(etag: str | None = None):
     def prepare_request(request):
         if request.method == "GET" and request.url.host.endswith(".private.blob.vercel-storage.com"):
             request.url = request.url.copy_set_param("cache", "0")
+            request.headers["accept-encoding"] = "identity"
         if etag and request.method == "PUT" and request.url.host == "vercel.com":
             request.headers["x-if-match"] = etag
 
@@ -160,9 +161,13 @@ def read_storage_data() -> dict:
         from vercel.blob import sync as blob
         try:
             with blob_session():
+                before = blob.head_blob("mobisi/dados.json")
                 result = blob.get_blob("mobisi/dados.json", access="private")
+                after = blob.head_blob("mobisi/dados.json")
+            if before.etag != after.etag:
+                raise HTTPException(409, detail="Os dados mudaram durante a leitura. Tente novamente.")
             data = StoredData(json.loads(result.body))
-            data.etag = result.metadata.etag
+            data.etag = after.etag
             if not data.etag:
                 raise HTTPException(503, detail="Armazenamento retornou dados sem versao.")
             return data

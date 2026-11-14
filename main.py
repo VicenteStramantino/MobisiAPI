@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from threading import Lock
@@ -50,12 +51,7 @@ def initial_data() -> dict:
 
 
 def load_data() -> dict:
-    if not DATA_FILE.exists():
-        data = initial_data()
-        save_data(data)
-        return data
-    with DATA_FILE.open("r", encoding="utf-8") as file:
-        raw = json.load(file)
+    raw = read_storage_data()
     # Compatibilidade com o locais.json antigo, que era uma lista de locais.
     if isinstance(raw, list):
         locais = []
@@ -124,7 +120,94 @@ def load_data() -> dict:
     return raw
 
 
+class StoredData(dict):
+    """JSON document plus its storage version (not serialized)."""
+    etag: str | None = None
+
+
+def remote_storage_enabled() -> bool:
+    return bool(os.getenv("BLOB_STORE_ID") or os.getenv("BLOB_READ_WRITE_TOKEN"))
+
+
+def blob_session(etag: str | None = None):
+    # These two protocol options are available in the official JS SDK but not
+    # yet exposed by Python 0.5: origin reads and conditional uploads.
+    import httpx2
+    from vercel.api import session
+
+    def prepare_request(request):
+        if request.method == "GET" and request.url.host.endswith(".private.blob.vercel-storage.com"):
+            request.url = request.url.copy_set_param("cache", "0")
+        if etag and request.method == "PUT" and request.url.host == "vercel.com":
+            request.headers["x-if-match"] = etag
+
+    def check_response(response):
+        if response.status_code in (409, 412):
+            raise HTTPException(409, detail={
+                "codigo": "CONFLITO_DE_ATUALIZACAO",
+                "mensagem": "Os dados foram alterados por outra requisicao. Recarregue e tente novamente.",
+            })
+
+    return session(httpx_client_factory=lambda: httpx2.Client(
+        timeout=30.0,
+        event_hooks={"request": [prepare_request], "response": [check_response]},
+    ))
+
+
+def read_storage_data() -> dict:
+    if remote_storage_enabled():
+        from vercel.blob import BlobNotFoundError, BlobError
+        from vercel.blob import sync as blob
+        try:
+            with blob_session():
+                result = blob.get_blob("mobisi/dados.json", access="private")
+            data = StoredData(json.loads(result.body))
+            data.etag = result.metadata.etag
+            if not data.etag:
+                raise HTTPException(503, detail="Armazenamento retornou dados sem versao.")
+            return data
+        except BlobNotFoundError:
+            # Seed only when the remote file does not exist. Never replace an
+            # existing remote document with the bundled JSON on a new deploy.
+            with DATA_FILE.open("r", encoding="utf-8") as file:
+                data = StoredData(json.load(file))
+            save_data(data)
+            return data
+        except BlobError as error:
+            raise HTTPException(503, detail="Armazenamento temporariamente indisponivel.") from error
+    if os.getenv("VERCEL"):
+        raise HTTPException(503, detail="Conecte um Vercel Blob privado ao projeto.")
+    if not DATA_FILE.exists():
+        data = initial_data()
+        save_data(data)
+        return data
+    with DATA_FILE.open("r", encoding="utf-8") as file:
+        return json.load(file)
+
+
 def save_data(data: dict) -> None:
+    if remote_storage_enabled():
+        from vercel.blob import BlobError
+        from vercel.blob import sync as blob
+        etag = getattr(data, "etag", None)
+        try:
+            with blob_session(etag):
+                result = blob.put_blob(
+                    "mobisi/dados.json",
+                    json.dumps(data, ensure_ascii=False, indent=2).encode("utf-8"),
+                    access="private",
+                    content_type="application/json",
+                    add_random_suffix=False,
+                    allow_overwrite=etag is not None,
+                    cache_control_max_age=60,
+                )
+            if isinstance(data, StoredData):
+                data.etag = result.etag
+            return
+        except BlobError as error:
+            raise HTTPException(503, detail="Nao foi possivel salvar os dados. Tente novamente.") from error
+    if os.getenv("VERCEL"):
+        raise HTTPException(503, detail="Conecte um Vercel Blob privado ao projeto.")
     temp = DATA_FILE.with_suffix(".tmp")
     with temp.open("w", encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False, indent=2)

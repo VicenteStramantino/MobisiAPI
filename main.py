@@ -269,7 +269,14 @@ def validate_answers(respostas: list[AnswerInput]) -> None:
 
 
 def review_output(review: dict) -> dict:
-    return {"id": review["id"], "respostas": review["respostas"],
+    respostas = [
+        {
+            "pergunta": QUESTION_MAP[answer["pergunta_id"]][2],
+            "resposta": answer["resposta"],
+        }
+        for answer in review["respostas"]
+    ]
+    return {"id": review["id"], "respostas": respostas,
             "criada_em": review["criada_em"], "atualizada_em": review["atualizada_em"]}
 
 

@@ -741,7 +741,232 @@
       }
     }
   ],
-  "avaliacoes": [],
+  "avaliacoes": [
+    {
+      "id": 1,
+      "local_id": 1,
+      "respostas": [
+        {
+          "pergunta_id": 1,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 2,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 3,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 4,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 5,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 6,
+          "resposta": "NAO_SEI"
+        },
+        {
+          "pergunta_id": 7,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 8,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 9,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 10,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 11,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 12,
+          "resposta": "NAO"
+        }
+      ],
+      "criada_em": "2026-11-15T20:17:34.504121Z",
+      "atualizada_em": "2026-11-15T20:17:34.504121Z"
+    },
+    {
+      "id": 2,
+      "local_id": 1,
+      "respostas": [
+        {
+          "pergunta_id": 1,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 2,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 3,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 4,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 5,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 6,
+          "resposta": "NAO_SEI"
+        },
+        {
+          "pergunta_id": 7,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 8,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 9,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 10,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 11,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 12,
+          "resposta": "NAO"
+        }
+      ],
+      "criada_em": "2026-11-15T20:37:39.272973Z",
+      "atualizada_em": "2026-11-15T20:37:39.272973Z"
+    },
+    {
+      "id": 3,
+      "local_id": 1,
+      "respostas": [
+        {
+          "pergunta_id": 1,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 2,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 3,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 4,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 5,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 6,
+          "resposta": "NAO_SEI"
+        },
+        {
+          "pergunta_id": 7,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 8,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 9,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 10,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 11,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 12,
+          "resposta": "NAO"
+        }
+      ],
+      "criada_em": "2026-11-15T20:38:49.535951Z",
+      "atualizada_em": "2026-11-15T20:38:49.535951Z"
+    },
+    {
+      "id": 4,
+      "local_id": 1,
+      "respostas": [
+        {
+          "pergunta_id": 1,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 2,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 3,
+          "resposta": "NAO_SEI"
+        },
+        {
+          "pergunta_id": 4,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 5,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 6,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 7,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 8,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 9,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 10,
+          "resposta": "SIM"
+        },
+        {
+          "pergunta_id": 11,
+          "resposta": "NAO"
+        },
+        {
+          "pergunta_id": 12,
+          "resposta": "SIM"
+        }
+      ],
+      "criada_em": "2026-11-15T20:45:43.788953Z",
+      "atualizada_em": "2026-11-15T20:45:43.788953Z"
+    }
+  ],
   "next_local_id": 21,
-  "next_avaliacao_id": 1
+  "next_avaliacao_id": 5
 }
